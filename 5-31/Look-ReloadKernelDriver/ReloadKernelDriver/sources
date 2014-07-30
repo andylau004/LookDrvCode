@@ -1,0 +1,19 @@
+# $Id$
+TARGETNAME=ReloadKernelDriver
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+
+
+# Create browse info
+#BROWSER_INFO=1
+#BROWSERFILE=<some path>
+
+# Additional defines for the C/C++ preprocessor
+C_DEFINES=$(C_DEFINES)
+
+SOURCES=ReloadKernelDriver.cpp \
+		ReloadKernel.cpp \
+		Common.cpp \
+		Module.cpp \
+		SSDT.cpp \
+        drvversion.rc
